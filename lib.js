@@ -35,4 +35,10 @@ function totals(items) {
   return { byCategory, total };
 }
 
-module.exports = { formatUAH, load, save, addExpense, totals, DB };
+function toCSV(items) {
+  const esc = (v) => (/[",\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : String(v));
+  const rows = items.map((i) => [i.id, i.date, i.amount.toFixed(2), i.category, i.note].map(esc).join(','));
+  return ['id,date,amount,category,note', ...rows].join('\n') + '\n';
+}
+
+module.exports = { formatUAH, load, save, addExpense, totals, toCSV, DB };
