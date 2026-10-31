@@ -8,18 +8,17 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 ![Node.js](https://img.shields.io/badge/node-%E2%89%A518-339933?logo=node.js&logoColor=white)
 ![Dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-blueviolet.svg)](#contributing)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-blueviolet.svg)](#-внесок-у-проєкт)
 ![Made in Ukraine](https://img.shields.io/badge/made%20in-Ukraine-0057B7?labelColor=FFD700)
 
 <img src="docs/demo.gif" alt="Демонстрація роботи Копійки" width="720" height="695">
 
-[Можливості](#features) · [Швидкий старт](#quick-start) · [Використання](#usage) · [Як це працює](#architecture) · [Roadmap](#roadmap) · [FAQ](#faq)
+[Можливості](#-можливості) · [Швидкий старт](#-швидкий-старт) · [Використання](#-використання) · [Як це працює](#-як-це-працює) · [Roadmap](#️-roadmap) · [FAQ](#-faq)
 
 </div>
 
 ---
 
-<a id="features"></a>
 ## ✨ Можливості
 
 | | Функція | Опис |
@@ -30,7 +29,6 @@
 | 🇺🇦 | Гривні «як треба» | `1 200,00 грн`, кома в сумі, нерозривні пробіли |
 | 🔒 | Офлайн | дані лише у локальному JSON-файлі, жодних серверів |
 
-<a id="quick-start"></a>
 ## 🚀 Швидкий старт
 
 ```bash
@@ -44,7 +42,6 @@ node kopiyka.js add 85 кава   # перша витрата
 > Додайте аліас у `~/.bashrc`, щоб запускати просто `kopiyka`:
 > `alias kopiyka="node ~/startup-readme/kopiyka.js"`
 
-<a id="usage"></a>
 ## 🧾 Використання
 
 | Команда | Результат |
@@ -66,7 +63,6 @@ $ kopiyka stats
 
 Файл даних за замовчуванням — `~/.kopiyka.json`; інший шлях задається змінною `KOPIYKA_FILE`.
 
-<a id="architecture"></a>
 ## 🧩 Як це працює
 
 ```mermaid
@@ -84,7 +80,6 @@ flowchart LR
 | Без реєстрації та реклами | ✅ | ❌ | ✅ |
 | Відкритий код | ❌ | ❌ | ✅ |
 
-<a id="roadmap"></a>
 ## 🗺️ Roadmap
 
 - [x] Додавання, журнал і статистика витрат
@@ -93,7 +88,6 @@ flowchart LR
 - [ ] Експорт у CSV для бухгалтерії
 - [ ] Місячні звіти: <kbd>kopiyka</kbd> <kbd>report</kbd> <kbd>--month</kbd>
 
-<a id="faq"></a>
 ## ❓ FAQ
 
 <details>
@@ -108,7 +102,6 @@ flowchart LR
 Так: задайте різні файли через змінну середовища, наприклад `KOPIYKA_FILE=~/travel.json kopiyka list`.
 </details>
 
-<a id="contributing"></a>
 ## 🤝 Внесок у проєкт
 
 1. Створіть issue з описом ідеї або помилки.
