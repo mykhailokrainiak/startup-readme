@@ -4,7 +4,7 @@
   "description": "Облік витрат у гривнях прямо в терміналі",
   "main": "lib.js",
   "bin": { "kopiyka": "kopiyka.js" },
-  "scripts": { "test": "node --test test/" },
+  "scripts": { "test": "node --test" },
   "license": "MIT",
   "author": "Mykhailo Krainiak"
 }
