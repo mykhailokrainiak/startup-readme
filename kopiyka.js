@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 'use strict';
-const { formatUAH, load, save, addExpense, totals } = require('./lib');
+const { formatUAH, load, save, addExpense, totals, toCSV } = require('./lib');
 
 const [cmd, ...args] = process.argv.slice(2);
 
@@ -23,11 +23,14 @@ try {
       console.log(`${c.padEnd(10)} ${bar.padEnd(20)} ${formatUAH(v)}`);
     }
     console.log(`${'Разом'.padEnd(31)} ${formatUAH(total)}`);
+  } else if (cmd === 'export') {
+    process.stdout.write(toCSV(load()));
   } else {
     console.log('Копійка — облік витрат у терміналі\n');
     console.log('  kopiyka add <сума> <категорія> [нотатка]');
     console.log('  kopiyka list');
     console.log('  kopiyka stats');
+    console.log('  kopiyka export > витрати.csv');
   }
 } catch (e) {
   console.error(`✖ ${e.message}`);
