@@ -11,7 +11,7 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-blueviolet.svg)](#contributing)
 ![Made in Ukraine](https://img.shields.io/badge/made%20in-Ukraine-0057B7?labelColor=FFD700)
 
-<img src="docs/demo.gif" alt="Демонстрація роботи Копійки" width="720">
+<img src="docs/demo.gif" alt="Демонстрація роботи Копійки" width="720" height="695">
 
 [Можливості](#features) · [Швидкий старт](#quick-start) · [Використання](#usage) · [Як це працює](#architecture) · [Roadmap](#roadmap) · [FAQ](#faq)
 
