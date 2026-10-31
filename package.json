@@ -1,0 +1,10 @@
+{
+  "name": "kopiyka",
+  "version": "0.1.0",
+  "description": "Облік витрат у гривнях прямо в терміналі",
+  "main": "lib.js",
+  "bin": { "kopiyka": "kopiyka.js" },
+  "scripts": { "test": "node --test test/" },
+  "license": "MIT",
+  "author": "Mykhailo Krainiak"
+}
